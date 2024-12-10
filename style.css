@@ -1,1 +1,107 @@
-/* Software agency landing page */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.suxkonteiner {
+  background-color: white;
+  width: 1200px;
+  height: 174px;
+}
+
+.accordion .item {
+  border: 1px solid gray;
+  margin-bottom: 32px;
+  background: none;
+}
+
+.frequently {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+h4 {
+  color: #1e1000;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 150% */
+  letter-spacing: -0.5px;
+  text-transform: capitalize;
+}
+
+p {
+  color: rgba(30, 16, 0, 0.71);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 180%; /* 28.8px */
+  text-transform: capitalize;
+}
+.t-p {
+  color: #aaa;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding-left: 5px;
+}
+.accordion .item .item-header h2 button.btn.btn-link {
+  color: rgb(0, 0, 0);
+  border-radius: 0px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.5;
+  text-decoration: none;
+}
+.accordion .item .item-header {
+  border-bottom: none;
+  background: transparent;
+  padding: 0px;
+  margin: 2px;
+}
+.accordion .item .item-header h2 button {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: "poppins";
+}
+.accordion .item .item-header h2 i {
+  float: right;
+  font-size: 30px;
+  color: #494949;
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+button.btn.btn-link.collapsed i {
+  transform: rotate(-90deg);
+}
+button.btn.btn-link i {
+  transform: rotate();
+  transition: 0.5s;
+}
