@@ -6,9 +6,11 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(358deg, #000 -10.63%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.startHeader {
   /* background: linear-gradient(358deg, #000 -10.63%, rgba(0, 0, 0, 0) 98.03%); */
-  /* //ფერიმაქ გასაკეთებელი არჯდება კითხვა ვალერისთნ???????????// */
+  background: linear-gradient(358deg, #000 -10.63%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 header {
@@ -16,6 +18,13 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+}
+
+.logoss {
+  margin-top: -5px;
+  width: 50px;
+  border-radius: 30px;
+  display: flex;
 }
 
 header .logo {

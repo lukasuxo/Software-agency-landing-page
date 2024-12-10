@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,65 +14,66 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="./images/svg" alt="icon">
-            Lukan.it
-        </div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Company</a>
-            <a href="#">IT Solutions</a>
-            <a href="#">Features</a>
-            <a href="#">Contact Us</a>
-            <div class="auth">
-                <a href="#" class="login" onclick="openModal('loginModal')">Login</a>
-                <a href="#" class="signup" onclick="openModal('signupModal')">Sign Up</a>
+    <div class="startHeader">
+        <header>
+            <div class="logo">
+                <img class="logoss" src="./images/video1logo.gif" alt="icon">
+                Lukan.it
             </div>
-        </nav>
-    </header>
-    <div class="hero">
-        <div class="text">
-            <h1>Power Software <br> For Leading Brands <br> And Business</h1>
-            <p>We provide software development services to help your <br> business grow and are very good for the
-                continuity
-                of your <br> business in the midst of this generation 4.0.</p>
-            <button class="btn">Get Started</button>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Company</a>
+                <a href="#">IT Solutions</a>
+                <a href="#">Features</a>
+                <a href="#">Contact Us</a>
+                <div class="auth">
+                    <a href="#" class="login" onclick="openModal('loginModal')">Login</a>
+                    <a href="#" class="signup" onclick="openModal('signupModal')">Sign Up</a>
+                </div>
+            </nav>
+        </header>
+        <div class="hero">
+            <div class="text">
+                <h1>Power Software <br> For Leading Brands <br> And Business</h1>
+                <p>We provide software development services to help your <br> business grow and are very good for the
+                    continuity
+                    of your <br> business in the midst of this generation 4.0.</p>
+                <button class="btn">Get Started</button>
+            </div>
+            <div class="video">
+                <iframe src="./images/07.12.2024_02.50.40_REC.mp4" title="Video"></iframe>
+            </div>
         </div>
-        <div class="video">
-            <iframe src="./images/07.12.2024_02.50.40_REC.mp4" title="Video"></iframe>
-        </div>
-    </div>
 
-    <div class="modal" id="loginModal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('loginModal')">&times;</span>
-            <h2>Login</h2>
-            <form onsubmit="return handleForm('loginModal')">
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Login</button>
-            </form>
+        <div class="modal" id="loginModal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('loginModal')">&times;</span>
+                <h2>Login</h2>
+                <form onsubmit="return handleForm('loginModal')">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
         </div>
-    </div>
 
-    <div class="modal" id="signupModal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('signupModal')">&times;</span>
-            <h2>Sign Up</h2>
-            <form onsubmit="return handleForm('signupModal')">
-                <input type="text" placeholder="Name" required>
-                <input type="text" placeholder="Last-name" required>
-                <input type="mobile-Number" placeholder="Mobile-Nummber" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Password" required>
-                <button type="submit">Sign Up</button>
-            </form>
+        <div class="modal" id="signupModal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('signupModal')">&times;</span>
+                <h2>Sign Up</h2>
+                <form onsubmit="return handleForm('signupModal')">
+                    <input type="text" placeholder="Name" required>
+                    <input type="text" placeholder="Last-name" required>
+                    <input type="mobile-Number" placeholder="Mobile-Nummber" required>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
         </div>
+        <div class="sidebar-close" id="sidebarClose" onclick="closeAllModals()"></div>
     </div>
-    <div class="sidebar-close" id="sidebarClose" onclick="closeAllModals()"></div>
     <script src="./script.js"></script>
 </body>
 
 </html>
->>>>>>> Stashed changes
