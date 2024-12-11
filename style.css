@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,12 +6,16 @@
 }
 
 body {
+  height: 100vh;
+  width: 100%;
   font-family: Arial, sans-serif;
 }
 
 .startHeader {
-  /* background: linear-gradient(358deg, #000 -10.63%, rgba(0, 0, 0, 0) 98.03%); */
   background: linear-gradient(358deg, #000 -10.63%, rgba(0, 0, 0, 0.5) 100%);
+  overflow-x: hidden;
+  /* background: linear-gradient(358deg, #000 -10.63%, rgba(0, 0, 0, 0) 98.03%); */
+  /* background: linear-gradient(358deg, #000 -10.63%, rgba(0, 0, 0, 0.5) 100%); */
 }
 
 header {
@@ -89,7 +94,7 @@ nav .signup {
   border: 1px solid white;
 }
 
-.hero {
+.hero{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,4 +225,190 @@ nav .signup {
 
 .sidebar-close.active {
   display: flex;
+}
+/* Software agency landing page */
+
+#footer{
+    height: 100vh;
+    width: 100%;
+}
+
+.footerlogo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.topDiv{
+    background-color: #FFF8F1;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 14px;
+}
+
+.fotterH1{
+    color: #1E1000;
+    font-weight: 700;
+}
+
+.footerP{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(30, 16, 0, 0.71);
+    text-align: center;
+}
+
+.footerYellowButton{
+    padding: 10px 25px;
+    background-color: #FF9F34;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.footerYellowButton:hover{
+    background-color: #f9b86d;
+}
+
+
+.bottomDiv{
+    /* width: 100%; */
+    background-color: #402613;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 50px;
+}
+
+
+.socialMediaLinks{
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.SMLogo{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 25px;
+}
+
+.SCLogos{
+    width: 30px;
+    height: 30px;
+}
+
+.leftTop{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.LinksH3{
+    color: white;
+}
+
+.footerLeftP{
+    color: rgba(255, 255, 255, 0.71);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.linksAbout{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footerAbout{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.footerResorces{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.FooterTitleH3{
+    color: white;
+}
+
+.List{
+    color: rgba(255, 255, 255, 0.71);
+    font-size: 12px;
+}
+
+
+.footerOurOffice{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bottomDivBottom{
+    background-color: #402613;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BottomBottomBottomP{
+    color: rgba(255, 255, 255, 0.71);
+}
+
+
+
+@media (max-width: 850px) {
+
+    .bottomDiv{
+        display: flex;
+    }
+    
+    .footerAbout{
+        display: none;
+    }
+}
+
+
+@media (max-width: 835px) {
+
+  .bottomDiv{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .linksAbout{
+    justify-content:left;
+  }
+  
+  .footerAbout{
+      display: none;
+  }
+
+  .fotterH1{
+    font-size: 25px;
+  }
+
+  .footerP{
+    font-size: 12px;
+  }
 }

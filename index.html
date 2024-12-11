@@ -1,79 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Software-agency-landing-page</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap"
-        rel="stylesheet">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="startHeader">
-        <header>
-            <div class="logo">
-                <img class="logoss" src="./images/video1logo.gif" alt="icon">
-                Lukan.it
-            </div>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Company</a>
-                <a href="#">IT Solutions</a>
-                <a href="#">Features</a>
-                <a href="#">Contact Us</a>
-                <div class="auth">
-                    <a href="#" class="login" onclick="openModal('loginModal')">Login</a>
-                    <a href="#" class="signup" onclick="openModal('signupModal')">Sign Up</a>
-                </div>
-            </nav>
-        </header>
-        <div class="hero">
-            <div class="text">
-                <h1>Power Software <br> For Leading Brands <br> And Business</h1>
-                <p>We provide software development services to help your <br> business grow and are very good for the
-                    continuity
-                    of your <br> business in the midst of this generation 4.0.</p>
-                <button class="btn">Get Started</button>
-            </div>
-            <div class="video">
-                <iframe src="./images/07.12.2024_02.50.40_REC.mp4" title="Video"></iframe>
-            </div>
+      <header>
+        <div class="logo">
+          <img class="logoss" src="./images/video1logo.gif" alt="icon" />
+          Lukan.it
         </div>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Company</a>
+          <a href="#">IT Solutions</a>
+          <a href="#">Features</a>
+          <a href="#">Contact Us</a>
+          <div class="auth">
+            <a href="#" class="login" onclick="openModal('loginModal')"
+              >Login</a
+            >
+            <a href="#" class="signup" onclick="openModal('signupModal')"
+              >Sign Up</a
+            >
+          </div>
+        </nav>
+      </header>
+      <div class="hero">
+        <div class="text">
+          <h1>
+            Power Software <br />
+            For Leading Brands <br />
+            And Business
+          </h1>
+          <p>
+            We provide software development services to help your <br />
+            business grow and are very good for the continuity of your <br />
+            business in the midst of this generation 4.0.
+          </p>
+          <button class="btn">Get Started</button>
+        </div>
+        <div class="video">
+          <iframe
+            src="./images/07.12.2024_02.50.40_REC.mp4"
+            title="Video"
+          ></iframe>
+        </div>
+      </div>
 
-        <div class="modal" id="loginModal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('loginModal')">&times;</span>
-                <h2>Login</h2>
-                <form onsubmit="return handleForm('loginModal')">
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" required>
-                    <button type="submit">Login</button>
-                </form>
-            </div>
+      <div class="modal" id="loginModal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('loginModal')">&times;</span>
+          <h2>Login</h2>
+          <form onsubmit="return handleForm('loginModal')">
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Login</button>
+          </form>
         </div>
+      </div>
 
-        <div class="modal" id="signupModal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal('signupModal')">&times;</span>
-                <h2>Sign Up</h2>
-                <form onsubmit="return handleForm('signupModal')">
-                    <input type="text" placeholder="Name" required>
-                    <input type="text" placeholder="Last-name" required>
-                    <input type="mobile-Number" placeholder="Mobile-Nummber" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" required>
-                    <button type="submit">Sign Up</button>
-                </form>
-            </div>
+      <div class="modal" id="signupModal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('signupModal')">&times;</span>
+          <h2>Sign Up</h2>
+          <form onsubmit="return handleForm('signupModal')">
+            <input type="text" placeholder="Name" required />
+            <input type="text" placeholder="Last-name" required />
+            <input type="mobile-Number" placeholder="Mobile-Nummber" required />
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Password" required />
+            <button type="submit">Sign Up</button>
+          </form>
         </div>
-        <div class="sidebar-close" id="sidebarClose" onclick="closeAllModals()"></div>
+      </div>
+      <div
+        class="sidebar-close"
+        id="sidebarClose"
+        onclick="closeAllModals()"
+      ></div>
+    </div>
+    <div id="footer">
+      <div class="topDiv">
+        <h1 class="fotterH1">It’s Easy To Get Started</h1>
+        <p class="footerP">
+          From now on cooperate with us and get satisfactory <br />
+          benefits and benefits
+        </p>
+        <button class="footerYellowButton" type="button">Get Started</button>
+      </div>
+      <div class="bottomDiv">
+        <div class="socialMediaLinks">
+          <div class="leftTop">
+            <img class="footerlogo" src="./images/video1logo.gif" alt="Logo" />
+            <h3 class="LinksH3">Lukan.it</h3>
+          </div>
+          <p class="footerLeftP">
+            We are the most powerful and leading <br />
+            software agency in the world
+          </p>
+          <div class="SMLogo">
+            <a href="https://www.facebook.com/"
+              ><img class="SCLogos" src="./imagesSvg/facebook.svg" alt=""
+            /></a>
+            <a href="https://www.instagram.com/accounts/login/"
+              ><img class="SCLogos" src="./imagesSvg/instagram..svg" alt=""
+            /></a>
+            <a href="https://twitter.com/i/flow/signup"
+              ><img class="SCLogos" src="./imagesSvg/twitter.svg" alt=""
+            /></a>
+            <a href="https://www.youtube.com/"
+              ><img class="SCLogos" src="./imagesSvg/youtube.svg" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="linksAbout">
+          <div class="footerLinks">
+            <h3 class="FooterTitleH3">Links</h3>
+            <p class="List">Home</p>
+            <p class="List">Services</p>
+            <p class="List">Invest</p>
+            <p class="List">Tutorial</p>
+            <p class="List">Contact</p>
+          </div>
+          <div class="footerAbout">
+            <h3 class="FooterTitleH3">About</h3>
+            <p class="List">Partners</p>
+            <p class="List">Careers</p>
+            <p class="List">Press</p>
+            <p class="List">Community</p>
+          </div>
+          <div class="footerResorces">
+            <h3 class="FooterTitleH3">Community</h3>
+            <p class="List">Help</p>
+            <p class="List">Support</p>
+            <p class="List">Stories</p>
+            <p class="List">Reviews</p>
+            <p class="List">Resources</p>
+          </div>
+        </div>
+        <div class="footerOurOffice">
+          <h3 class="FooterTitleH3">Our Office</h3>
+          <p class="List">
+            Indonesia <br />
+            Jl. Griya Permata Hijau no D1 <br />
+            Purwomartani Kalasan <br />
+            543881
+          </p>
+        </div>
+      </div>
+      <div class="bottomDivBottom">
+        <p class="BottomBottomBottomP">© 2021 Arcstress All rights reserved.</p>
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>
