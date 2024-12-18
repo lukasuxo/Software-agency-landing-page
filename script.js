@@ -20,3 +20,41 @@ function handleForm(modalId) {
   closeModal(modalId);
   return false;
 }
+
+// ჰოვერზე ფოტკების შეცვლა
+
+document.addEventListener("DOMContentLoaded", () => {
+  const imageElement = document.getElementById("ITImgHover");
+
+
+  const hoverEffects = [
+      {
+          id: "BestQuality",
+          imageSrc: "./images/quality.png",
+      },
+      {
+          id: "AffordablePrices",
+          imageSrc: "./images/ptice.jpg",
+      },
+      {
+          id: "CustemerServices",
+          imageSrc: "./images/services.jpg",
+      },
+  ];
+
+
+  hoverEffects.forEach(({ id, imageSrc }) => {
+      const element = document.getElementById(id);
+      if (element) {
+          element.addEventListener("mouseenter", () => {
+              imageElement.src = imageSrc;
+          });
+
+          element.addEventListener("mouseleave", () => {
+              imageElement.src = "./images/js_pictur1.jpg";
+          });
+      }
+  });
+});
+
+// ჰოვერზე ფოტკების შეცვლის დასასრულიიიიიიიიიიიიი

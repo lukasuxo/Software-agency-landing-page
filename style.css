@@ -34,7 +34,7 @@ header .logo {
   display: flex;
   gap: 12px;
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -43,7 +43,7 @@ header .logo {
 
 h1 {
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 52px;
   font-style: normal;
   font-weight: 700;
@@ -53,7 +53,7 @@ h1 {
 
 p {
   color: rgba(255, 255, 255, 0.71);
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -71,7 +71,7 @@ nav a {
   top: 29px;
   text-decoration: none;
   color: #fff;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -120,7 +120,7 @@ nav .signup {
   flex-shrink: 0;
   background: #ff9f34;
   color: #fff;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -168,7 +168,7 @@ nav .signup {
 }
 
 .modal-content h2 {
-  font-family: poppins;
+  font-family: 'poppins';
   margin-bottom: 20px;
   color: rgb(255, 0, 0);
 }
@@ -187,7 +187,7 @@ nav .signup {
   background-color: rgb(255, 0, 0);
   color: white;
   border: none;
-  font-family: poppins;
+  font-family: 'poppins';
   border-radius: 5px;
   font-size: 1rem;
   cursor: pointer;
@@ -208,7 +208,7 @@ nav .signup {
   right: 0;
   width: 40px;
   height: 40px;
-  font-family: poppins;
+  font-family: 'poppins';
   color: white;
   border-radius: 5px 0 0 5px;
   display: none;
@@ -220,4 +220,177 @@ nav .signup {
 
 .sidebar-close.active {
   display: flex;
+}
+
+
+
+#ITSolutions{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ITSolutionsH1{
+  color: #1E1000;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.bottombottomIT{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.iTBottomDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.ITLeftDiv{
+  width: 100%;
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ITrightDiv{
+  width: 100%;
+  padding-right: 120px;
+}
+
+.ITH4{
+  color: #121212;
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+.ITP{
+  color: rgba(30, 16, 0, 0.71);
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+#BestQuality{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #c3c3c3;
+}
+
+.ITSolutionsH11{
+  display: none;
+  color: #1E1000;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.ButtonleftDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#AffordablePrices{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #c3c3c3;
+}
+
+#CustemerServices{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #c3c3c3;
+}
+
+#ITImgHover{
+  width: 500px;
+  height: 370px;
+}
+
+@media (max-width: 1200px) {
+  .ITH4{
+    font-size: 20px;
+  }
+  
+  
+  .ITP{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .iTBottomDiv{
+    flex-direction: column;
+  }
+
+  .ITSolutionsH11{
+    display: flex;
+    order: 2;
+  }
+  
+
+  .bottombottomIT{
+    flex-direction: column;
+  }
+
+  .ITrightDiv{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-right: 0;
+    order: 1;
+  }
+
+  .ITSolutionsH1{
+    display: none;
+  }
+
+  .ITLeftDiv{
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    order: 3;
+  }
+
+  .ITH4{
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  
+  .ITP{
+    font-size: 20px;
+    text-align: center;
+  }
 }
