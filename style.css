@@ -235,6 +235,10 @@ nav .signup {
   cursor: pointer;
 }
 
+.Watch Video {
+  border: 1px solid white;
+}
+
 .hero .video {
   display: flex;
   width: 50%;
