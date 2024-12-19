@@ -218,6 +218,182 @@ nav .signup {
   z-index: 1000;
 }
 
+.show-video {
+  position: relative;
+  top: -50px;
+  left: 160px;
+  display: none;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 156px;
+  height: 50px;
+  flex-shrink: 0;
+  border: 1.2px solid #fff;
+
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+
+.video-container.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video-content {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  animation: slide-up 0.5s ease-out;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+}
+
+.close-video {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  width: 10px;
+  height: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 .sidebar-close.active {
   display: flex;
+}
+
+@media screen and (max-width: 1310px) {
+  nav {
+    display: none;
+  }
+
+  /* iframe {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    position: relative;
+    left: -120px;
+  }
+
+  .hero .text {
+    position: relative;
+    top: -120px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .hero .text h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .hero .text p {
+    font-size: 0.9rem;
+  }
+
+  .hero .text .btn {
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .hero .video {
+    width: 100%;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .hero .video iframe {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .hero .text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero .text p {
+    font-size: 0.8rem;
+  }
+
+  .hero .text .btn {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .hero .video iframe {
+    height: 180px;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 350px) {
+  .show-video {
+    display: block;
+  }
+}
+
+@media (max-width: 349px),
+(min-width: 751px) {
+  .show-video {
+    display: none;
+  }
 }

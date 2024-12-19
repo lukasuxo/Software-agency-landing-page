@@ -20,3 +20,21 @@ function handleForm(modalId) {
   closeModal(modalId);
   return false;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const showVideoButton = document.querySelector(".show-video");
+  const videoContainer = document.querySelector(".video-container");
+  const closeVideoButton = document.querySelector(".close-video");
+  const video = document.querySelector("video");
+
+  showVideoButton.addEventListener("click", () => {
+    videoContainer.classList.add("visible");
+    video.play();
+  });
+
+  closeVideoButton.addEventListener("click", () => {
+    videoContainer.classList.remove("visible");
+    video.pause();
+    video.currentTime = 0;
+  });
+});
