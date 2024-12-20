@@ -221,3 +221,64 @@ nav .signup {
 .sidebar-close.active {
   display: flex;
 }
+
+.main-section {
+  display: flex;
+  justify-content: space-around;
+  background-color:#FFF8F1;
+  padding: 80px 100px;
+}
+
+.main-section p, h5 {
+  color: #1E1000;
+  font-size: 40px;
+}
+
+.experience p, .custome p {
+  font-weight: 400;
+  font-family: Poppins;
+  line-height: 60px;
+  letter-spacing: 0.5px;
+}
+
+.custome-text p {
+  color: #1E1000B5;
+  font-size: 16px;
+  justify-content: end;
+  align-items: end;
+}
+
+.two-container {
+  margin-top: 300px;
+  position: relative;
+}
+
+.under-container {
+  background-color: #402613;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  padding: 52px 110px 60px 500px;
+}
+
+.under-container-text h4 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.under-container-text p {
+  padding-top: 24px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.top-container-image img{
+  width: 600px;
+  height: 500px;
+  position: absolute;
+}
