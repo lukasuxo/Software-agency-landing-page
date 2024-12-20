@@ -22,7 +22,11 @@ header {
 
 .photo{
   position: relative;
-  top: -50px  ;
+  top: -160px  ;
+  left: 120px ;
+  width: 600px;
+height: 500px;
+flex-shrink: 0;
 }
 .logoss {
   margin-top: -5px;
