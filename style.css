@@ -20,6 +20,10 @@ header {
   padding: 10px 20px;
 }
 
+.photo{
+  position: relative;
+  top: -50px  ;
+}
 .logoss {
   margin-top: -5px;
   width: 50px;
