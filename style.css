@@ -452,8 +452,14 @@ video {
   font-weight: 400;
 }
 
+.top-container-image {
+  position: relative;
+}
+
 .top-container-image img{
   width: 600px;
   height: 500px;
   position: absolute;
+  left: 120px;
+  top: -140px;
 }
