@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const hoverEffects = [
       {
           id: "BestQuality",
-          imageSrc: "./images/quality.png",
+          imageSrc: "./images/quality.jpg",
       },
       {
           id: "AffordablePrices",
