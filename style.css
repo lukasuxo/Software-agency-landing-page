@@ -797,3 +797,244 @@ video {
   top: -140px;
 }
 }
+.text-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 200px;
+  margin-top: 60px;
+}
+
+.text-content h4 {
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  color: #1E1000;
+}
+
+.text-content p {
+  font-size: 16px;
+  line-height: 32px;
+  color: #1E1000B5;
+}
+
+.three-container {
+  margin-top: 50px;
+  display: flex;          
+  justify-content: center;
+  gap: 24px;
+}
+
+.three-container span {
+  color: #FF9F34;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 20px 0 8px 0;
+}
+
+.three-container h6 {
+  color: #1E1000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: .5px;
+}
+
+.three-container p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.gray-box {
+  background-color: gray;
+  width: 384px;
+  height: 300px;
+}
+
+#footer{
+  height: 100vh;
+  width: 100%;
+}
+
+.footerlogo{
+width: 50px;
+height: 50px;
+border-radius: 50%;
+}
+.topDiv{
+  background-color: #FFF8F1;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 14px;
+}
+
+.fotterH1{
+  color: #1E1000;
+  font-weight: 700;
+}
+
+.footerP{
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(30, 16, 0, 0.71);
+  text-align: center;
+}
+
+.footerYellowButton{
+  padding: 10px 25px;
+  background-color: #FF9F34;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.footerYellowButton:hover{
+  background-color: #f9b86d;
+}
+
+
+.bottomDiv{
+  /* width: 100%; */
+  background-color: #402613;
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+}
+
+
+.socialMediaLinks{
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.SMLogo{
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 25px;
+}
+
+.SCLogos{
+  width: 30px;
+  height: 30px;
+}
+
+.leftTop{
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.LinksH3{
+  color: white;
+}
+
+.footerLeftP{
+  color: rgba(255, 255, 255, 0.71);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.linksAbout{
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.footerLinks{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footerAbout{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+
+.footerResorces{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.FooterTitleH3{
+  color: white;
+}
+
+.List{
+  color: rgba(255, 255, 255, 0.71);
+  font-size: 12px;
+}
+
+
+.footerOurOffice{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bottomDivBottom{
+  background-color: #402613;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.BottomBottomBottomP{
+  color: rgba(255, 255, 255, 0.71);
+}
+
+
+
+@media (max-width: 850px) {
+
+  .bottomDiv{
+      display: flex;
+  }
+
+  .footerAbout{
+      display: none;
+  }
+}
+
+
+@media (max-width: 835px) {
+
+.bottomDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.linksAbout{
+  justify-content:left;
+}
+
+.footerAbout{
+    display: none;
+}
+
+.fotterH1{
+  font-size: 25px;
+}
+
+.footerP{
+  font-size: 12px;
+}
+}
