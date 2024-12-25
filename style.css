@@ -463,3 +463,337 @@ video {
   left: 120px;
   top: -140px;
 }
+
+
+#ITSolutions{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ITSolutionsH1{
+  color: #1E1000;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.bottombottomIT{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.iTBottomDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.ITLeftDiv{
+  width: 100%;
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ITrightDiv{
+  width: 100%;
+  padding-right: 120px;
+}
+
+.ITH4{
+  color: #121212;
+  font-family: 'Poppins';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+.ITP{
+  color: rgba(30, 16, 0, 0.71);
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+
+#BestQuality{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #c3c3c3;
+}
+
+.ITSolutionsH11{
+  display: none;
+  color: #1E1000;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.ButtonleftDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+#AffordablePrices{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #c3c3c3;
+}
+
+#CustemerServices{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 1px solid #c3c3c3;
+}
+
+#ITImgHover{
+  width: 500px;
+  height: 370px;
+}
+
+@media (max-width: 1200px) {
+  .ITH4{
+    font-size: 20px;
+  }
+  
+  
+  .ITP{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .iTBottomDiv{
+    flex-direction: column;
+  }
+
+  .ITSolutionsH11{
+    display: flex;
+    order: 2;
+  }
+  
+
+  .bottombottomIT{
+    flex-direction: column;
+  }
+
+  .ITrightDiv{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-right: 0;
+    order: 1;
+  }
+
+  .ITSolutionsH1{
+    display: none;
+  }
+
+  .ITLeftDiv{
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    order: 3;
+  }
+
+  .ITH4{
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  
+  .ITP{
+    font-size: 20px;
+    text-align: center;
+  }
+@media screen and (max-width: 1310px) {
+  nav {
+    display: none;
+  }
+
+  /* iframe {
+    display: none;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    position: relative;
+    left: -120px;
+  }
+
+  .hero .text {
+    position: relative;
+    top: -120px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  .hero .text h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+
+  .hero .text p {
+    font-size: 0.9rem;
+  }
+
+  .hero .text .btn {
+    width: 140px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .hero .video {
+    width: 100%;
+    margin-bottom: 20px;
+    display: none;
+  }
+
+  .hero .video iframe {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .hero .text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero .text p {
+    font-size: 0.8rem;
+  }
+
+  .hero .text .btn {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .hero .video iframe {
+    height: 180px;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 750px) and (min-width: 350px) {
+  .show-video {
+    display: block;
+  }
+}
+
+@media (max-width: 349px),
+(min-width: 751px) {
+  .show-video {
+    display: none;
+  }
+}
+.main-section {
+  display: flex;
+  justify-content: space-around;
+  background-color:#FFF8F1;
+  padding: 80px 100px;
+}
+
+.main-section p, h5 {
+  color: #1E1000;
+  font-size: 40px;
+}
+
+.experience p, .custome p {
+  font-weight: 400;
+  font-family: Poppins;
+  line-height: 60px;
+  letter-spacing: 0.5px;
+}
+
+.custome-text p {
+  color: #1E1000B5;
+  font-size: 16px;
+  justify-content: end;
+  align-items: end;
+}
+
+.two-container {
+  margin-top: 300px;
+  position: relative;
+}
+
+.under-container {
+  background-color: #402613;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  padding: 52px 110px 60px 500px;
+}
+
+.under-container-text h4 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  line-height: 60px;
+  color: #FFFFFF;
+}
+
+.under-container-text p {
+  padding-top: 24px;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.top-container-image {
+  position: relative;
+}
+
+.top-container-image img{
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  left: 120px;
+  top: -140px;
+}
+}
